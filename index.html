@@ -1,0 +1,27 @@
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet'>
+	<style>
+	#mapcontainercorn {
+	   position:relative;
+	   height:80vh;
+	   width:90vw;
+	   border:1px solid #6e6e6e; 
+	}
+
+	</style>
+
+	<div id="mapcontainercorn" class="center-block"></div>
+
+	<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoibWVkdGVnaXMiLCJhIjoiY2oybHZzbDJ1MDBqczJxb3d4aW1pbGFjYyJ9._sMXsbKSy6iLPiNlwzvptg';
+	var mapCorn = new mapboxgl.Map({
+	   container: 'mapcontainercorn', // container id
+	   style: 'mapbox://styles/medtegis/cjium4ygk56xy2ro03t5cuckk',
+	   center: [-101, 47], // starting position [lng, lat]
+	   zoom: 9,
+	   maxZoom: 15,
+	   minZoom: 1,
+	   Pitch: 0,
+	   maxBounds: [[-162, 19.3514596947], [-40.166015625, 79.4755131426]],
+	});
+	</script>
